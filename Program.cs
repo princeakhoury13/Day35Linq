@@ -15,13 +15,13 @@
                 new ProductReview() {ProductId =5, UserId=3, Rating=2, Review= "Bad", isLike=true},
                 new ProductReview() {ProductId =6, UserId=4, Rating=4, Review= "Good", isLike=true},
                 new ProductReview() {ProductId =1, UserId=3, Rating=5, Review= "Good", isLike=true},
-                new ProductReview() {ProductId =10, UserId=10, Rating=1, Review= "Bad", isLike=false},
-                new ProductReview() {ProductId =11, UserId=10, Rating=1, Review= "Bad", isLike=false},
+                new ProductReview() {ProductId =2, UserId=10, Rating=1, Review= "Bad", isLike=false},
+                new ProductReview() {ProductId =5, UserId=10, Rating=1, Review= "Bad", isLike=false},
                 new ProductReview() {ProductId =12, UserId=10, Rating=2, Review= "Bad", isLike=false},
-                new ProductReview() {ProductId =13, UserId=10, Rating=3, Review= "Nice", isLike=true},
-                new ProductReview() {ProductId =14, UserId=10, Rating=4, Review= "Good", isLike=true},
-                new ProductReview() {ProductId =15, UserId=10, Rating=5, Review= "Good", isLike=true},
-                new ProductReview() {ProductId =16, UserId=10, Rating=3, Review= "Nice", isLike=true}
+                new ProductReview() {ProductId =6, UserId=10, Rating=3, Review= "Nice", isLike=true},
+                new ProductReview() {ProductId =3, UserId=10, Rating=4, Review= "Good", isLike=true},
+                new ProductReview() {ProductId =2, UserId=10, Rating=5, Review= "Good", isLike=true},
+                new ProductReview() {ProductId =5, UserId=10, Rating=3, Review= "Nice", isLike=true}
             };
 
             //foreach(var list in productReviews)
@@ -33,7 +33,8 @@
             Management management= new Management();
             //management.TopRecordList(productReviews);
 
-            management.SelectRecordList(productReviews);
+            //management.SelectRecordList(productReviews);
+            management.RetrieveCount(productReviews);
 
         }
     }
